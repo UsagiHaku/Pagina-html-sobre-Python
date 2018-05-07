@@ -1,0 +1,603 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <titlePython></title>
+        <meta name="description" content="Pagina para la materia del maestro curi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="manifest" href="site.webma<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">nifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/google/code-prettify/master/loader/skins/desert.css">
+        <!--css-->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+        <!--animate.css-->
+        <link rel="stylesheet" href="animate.min.css">
+        <!-- icon-->
+        <a href="https://icons8.com">Icon pack by Icons8</a>
+
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Python Page</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link " href="#">Historia <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Caracteristicas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Semántica y Sintaxis</a>
+                        <a class="dropdown-item" href="#">Identificadores y Variables</a>
+                        <a class="dropdown-item" href="#">Tipos de Datos</a>
+                        <a class="dropdown-item" href="#">Expresiones</a>
+                        <a class="dropdown-item" href="#">Estructuras de Control</a>
+                        <a class="dropdown-item" href="#">Subprogramas</a>
+                        <a class="dropdown-item" href="#">Pasos de Parametros</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ejemplo</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="history">
+            <div  class="container-fluid ">
+                <div class="row" >
+                    <div class="col">
+                        <h1 class="text-center">Historia</h1>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div id="history-information" class="col-sm-6 text-center " >
+                        <p>Fue creado a principios de la década de 1990 por Guido van Rossum para  Stichting Mathematisch Centrum (Centro para las Matemáticas y la Informática ) en los países bajos como un sucesor del lenguaje ABC.<br>
+                        Aunque el lenguaje surge de la contribución de varias personas, el autor principal sigue siendo Guido.<br>
+                        En 1995 Guido continuó Python en CNRI (Corporation for National Research Initiatives) ubicado en  Reston, Virginia donde lanzó varias versiones del software.
+                        <br>
+                        En Mayo del 2000, Guido y su equipo principal de desarrollo, se trasladaron a BeOpen.com para forma el equipo de BeOpen PhytonLabs. En octubre del mismo año , dicho equipo  se trasladó a Digital Creations( ahora Zope Corporation).
+                        <br>
+                        En 2001 se creó la Fundación de Software de Python (PSF por sus siglas en inglés) como una organización sin fines de lucro, y cuyo único propósito es poseer propiedad intelectual relacionada con Python.
+                        </p>
+                    </div>
+                    <div id="history-image" class="col-sm-6 text-center" >
+                        <img class="img-fluid rounded-circle" src="img/python_author.jpg" alt="Autor de Python">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center"> ¿Qué es Python? <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANHSURBVGhD7dpLyExhHMfxcc39uqKkRC4LxIaVWxGKjQ2SSC4bNmIhl6TIQtlQRFIk5L4QNihK7kRuWbmGFHIN31+d53TOef/vzHNm3nPOvDW/+jR1zjMz/6c5l+d5zpQa8U/n4LXu0x6TsA6HcA1v8BX/Ar/xChewDdPQDnURdUDFv4MrOI2nmI7CcwxWgWn8xXIUFh0aVmHV+INxKCRb4ArRobUem/Ax2JbWWRSSfXBFjNSGIGMRLdDXFxSSM1AB+jWS+YBkoT66Ifecg75cJ+sIbQgyCskCffVE7nEdkddYjTV4G2yrRuEdaSmNjtSSwdAVyscqWIUnuY5cTNCw5iAWoCMKy0xYhSe5jlj7nMcYAq/oMrgYh3EFN2v0DFZRST4dkZfog7KZg/ewPiBrvh2R3Wg2S6H7gvXGPKTpiKYIXdEkGmb8hPWmvHSHYu2z6ORvkpOwGuflOxRdlaz9lgOIpTd+wWqcF11UlEGw9lseIBbfy2OW5kJZBGu/RfOYLgizEVbDvBxHm8D1YJuvoQjjhuR504LEDnSAsgRWu3LGI8xdWI186QZ1BCpKKySVbMUKDITLVPyA9fnlzEAYLdNYjSq5hynQIVFtNIrQtFm/jvUdlUxAmM+wGpVzAm7hTR3R4HAhdFP1sQEaAlXz3VHDESbtL3IDnaBo9eMOrHZZ0yikF8Lch9XQojePgTIZupFZ7fLwHLFoKcZqaLkMRdfvas+tlnIUsWyG1dCiY1tJc+PKykrEMhtWQ4s6oOyFtT8vGuD2Ryx94TvWmgflNKz9edkJM77nietIFosPvm4hNsaKxvfwKrojpxC75FrxKS5NR3Qcf6qRpt0PobXmifCKppqXYBXlpOmInl4VlraYD50zj/AiYRYUn47oQZAmbb5qGbNVnSzOEbf4kGsaHcF5bIdWDaPbW1VH9sBF94IncPtaVUf0EDUa3aHdvh7akHf2I1qgLz2Xd9FV6iq0XdPcQrIMySJ9qGCNoDWS0AzRbde8v5Borq1HbtEia6HFi8KiIcM3WIWloUfT0QeqhUTT3tuwCvShP+CMRl1Ewxr9OWYXNMRubh6vRwEaAGoFZi30KLuuo38N9cMwaElzADK+R5RK/wEiER6Hd2p6pQAAAABJRU5ErkJggg=="></h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p>Dentro de los lenguajes informáticos, Python, pertenece al grupo de los lenguajes 
+                        de programación y puede ser clasificado como un lenguaje interpretado, de alto nivel, multiplataforma, 
+                        de tipado dinámico y multiparadigma. 
+                        </p>
+                        <p>Tiene interfaces a muchas llamadas al sistema y bibliotecas, así
+                                como también a varios sistemas de ventanas, y es extensible
+                                en C o C++.
+                        </p>
+                        <p>También es utilizable como un lenguaje de extensión para
+                                aplicaciones que necesiten interfaces programables.
+                                Finalmente, Python es portable, corre en muchas variantes de
+                                Unix, en la Mac, y en PCs
+                                bajo MSDOS,
+                                Windows, Windows
+                                NT, y OS/2.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center"> Características & Ámbito de Aplicación</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2 ">
+                        <h5>Entre las características podemos encontrar:</h5>
+                        <ul>
+                            <li>Rápido aprendizaje: sintaxis sencilla</li>
+                            <li>Tratamiento de excepciones con nombre.</li>
+                            <li>Extensible a otros sistemas software.</li>
+                            <li>Flexible en el tratamiento del lenguaje:un módulo que interactuará con un sistema
+                        externo puede ser probado con una “imitación” del sistema escrito en Python.
+                            </li>
+                            <li>Es un lenguaje dinámicamente interpretado.</li>
+                            <li>Orientado a objetos (herencia múltiple, ligadura dinámica, polimorfismo y con jerarquía de clases)</li>
+                            <li>Portable: está implementado en C estándar usando E/S Posix.</li>
+                            <li> Gratuito, y de libre distribución.</li>
+                        </ul>
+                        <p>Python no pretende se perfecto para todos los propósitos.</p>
+                        <p>Podemos suponer que la mayoría de los programas escritos hoy en día podrían pasarse
+                                a Python, pero él sólo no sería suficiente para la cantidad de aplicaciones que están
+                                orientadas a componentes compilados.
+                        </p>
+                        <h5>Aplicaciones para las cuáles no está recomendado:</h5>
+                        <ul>
+                            <li>Algoritmos de compresión de datos:<br>Estos algoritmos traducen un flujo de datos a una forma 
+                                más pequeña.<br>Esto implica examinar cada byte, y hacer un tratamiento estadístico. Para grandes
+                                cantidades de datos los compresores escritos en Python resultan demasiado lentos.
+                            </li>
+                            <li>Controladores de dispositivos:<br>Al igual que antes, una aplicación que realice millones de operaciones en punto flotante
+                                no uniformes será demasiado lenta en Python.
+                            </li>
+                            <li>Operaciones críticas de bases de datos.
+                            </li>
+                            <li>Operaciones altamente especializadas.</li>
+                        </ul>
+                        <h5>Algunos de los proyectos más importantes que utilizan Python son:</h5>
+                        <ul>
+                            <li>AstraZeneca usa Python para la investigación cooperativa de medicamentos:<br>
+                                AstraZeneca, una de compañías farmacéuticas más importantes del mundo, utiliza Python para
+                                reducir costes e incrementar la productividad en los procesos de identificación farmacológicos
+                            </li>
+                            <li>En Philips, la Linea de Semiconductores es sobre Python: <br>codifica la lógica que controla la
+                                producción de semiconductores.
+                            </li>
+                            <li>ForecastWatch.com usa Python para ayudar a los meteorólogos en sus previsiones.
+                            </li>
+                            <li>Control de tráfico aéreo: <br>Python y Jython proporcionan las trazas de la interfaz y procesador
+                                usados en el control de tráfico de los aeropuertos.
+                            </li>
+                            <li>Industrial Light & Magic es sobre Python:<br> La compañía de efectos especiales que creo
+                                    StarWars, usa Python para unir los miles de computadores y componentes de hardware en su
+                                producción de gráficos.
+                            </li>
+                            <li> La compañía marítima Tribon Solutions usa Python para incrementar su eficiencia en el diseño
+                                y construcción de buques.
+                            </li>
+                            <li>Python colabora con la misión Espacial Shuttle:<br> La United Space Alliance utiliza Python para
+                                enviar soluciones de ingeniería de calidad a un bajo coste.
+                            </li>
+                        </ul>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="semantics">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center"> Sintaxis & Semántica</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-center">comentar el programa</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p>El signo # sirve para indicar que empieza un comentario, se puede escribir lo necesario para
+                           entender el programa. Puede usarse una línea entera o escribir a la derecha de una instrucción. 
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-center">Asignación</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p>Se usa <code>=</code> para la asignación de valores a las variables.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-center">El comando if then ... else ...</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                     
+                        <pre class="prettyprint">
+    if condición-boolena:
+    instrucciones 2
+        else
+    instrucciones 2
+
+    #if..else anidados
+    if condicion:
+        instrucciones
+    elif condicion:
+        instrucciones
+    else:
+        instrucciones
+
+                        </pre>                   
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-center">Comando For</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <pre class="prettyprint">
+    for variable in variable_lista:
+        instrucciones
+
+                        </pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-center"> Definición de función</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <pre class="prettyprint">
+    def nombre_de_funcion (entrada):
+        cuerpo
+        return salida 
+                        </pre>
+
+                    </div>
+                    <div class="col-sm-8 offset-sm-2">
+                     
+                        <p>La indentación delimita qué instrucciones pertenecen a
+                           la función.</p>
+                        <p>A no ser que se use return, la función devuelve None.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-center">Rango</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p>Usado de la forma <code>range(i)</code> genera la
+                                lista [0,1,...,i].
+                        </p>
+                        <p>Usado de la forma <code>range(i,j) </code> genera la lista
+                                [i,i+1,...,j-1]</p>
+                    </div>
+                </div>
+          
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-center"> Función: "filter(función, lista_arg)"</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p>Devuelve una lista con los elementos x de <code>lista_arg</code> que cumplen <code>f(x) =
+                            true</code>
+                        </p>
+                        <h5>Ejemplo:</h5>
+                        <pre class="prettyprint">
+    def f(x): return x%2 != 0 and x%3 != 0
+
+    filter(f, range(2,25))
+    #Resultado: [5,7,11,13,17,19,23]
+                        </pre>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-center">Función: "map(función, lista_arg)" </h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p> Devuelve la lista:
+                        [f(lista_arg[0]),f(lista_arg[1]),...,f(lista_arg[n])
+                        </p>
+                        <h5>Ejemplo:</h5>
+                        <pre class="prettyprint">
+    def cubo(x): return x*x*x
+    map(cubo, range(1,5))
+    # Resultado :[1,8,27,64]                       
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-center"> Función: "reduce(funcion, lista_arg)"</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p>  Llama a funcion con los dos primeros elementos de
+                            <code>lista_arg</code>, luego la llama con el tercero y el resultado anterior, etc. Si sólo hay un
+                            elemento se devuelve este, y si no hay ninguno da error.
+                        </p>
+                        <pre class="prettyprint">
+    def add(x,y): return x+y
+
+    reduce(add, range(1,11))
+
+    #Resultado: 55
+                        </pre>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-center">Definición y uso de Clases</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p class="form" style="padding-left: 15px;" >
+                            class NombreDeClase:<br>
+                            sentencia 1<br>
+                            .<br>
+                            .<br>
+                            .<br>
+                            sentencia N<br>
+                            <br> 
+                            variable = NombreDeClase ()
+                        </p>
+                        <pre class="prettyprint">
+                            
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-center">
+
+                        </h4>
+                    </div>
+                </div>
+                    
+
+            
+            </div>
+
+        </section>
+        
+        <section id="identifiers">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col ">
+                        <h1 class="text-center">Identificadores:<br> Variables, Constantes Y Palabras Reservadas</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p> Python tiene reglas sobre qué es un identificador válido
+                         y qué no lo es.
+                        </p>
+                        <p>Un identificador comienza con una letra (de la A a la Z) o con guión bajo (_) y luego sigue con una secuencia de letras, números y guiones bajos. Los espacios no están permitidos dentro de los identificadores.</p>
+                        <p>Los siguientes son todos identificadores válidos de Python:</p>
+                        <pre class="prettyprint">
+    hola
+    hola12t
+     _hola
+    Hola
+                        </pre>
+                        <p>Python distingue mayúsculas de minúsculas, así que <code>Hola</code> es un identificador y <code>hola</code> es otro identificador.</p>
+                        <p class="form">Por convención, no debemos usar identificadores que empiezan con mayúscula.</p>
+                        <p>Los siguientes son todos identificadores inválidos de Python:</p>
+                        <pre class="prettyprint">
+    hola a12t
+    8hola
+    hola\%
+    Hola*9
+                        </pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2  class=" text-center">palabras reservadas</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p>Python reserva 31 palabras para describir la estructura del programa, y no permite que se usen como identificadores. 
+                            Cuando en un programa nos encontramos con que un nombre no es admitido pese a que su formato es válido, 
+                            seguramente se trata de una de las palabras de esta lista, 
+                            a la que llamaremos de palabras reservadas. Esta es la lista completa de las palabras reservadas de Python:
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 offset-sm-2">
+                        <pre class="prettyprint">
+    and         
+    as
+    assert
+    break
+    class
+    continue
+    def
+    del
+    elif
+    else
+    except
+    exec
+    finally
+    for
+    from
+    global
+                        </pre>
+                    </div>
+                    <div class="col-sm-3 offset-sm-2">
+                        <pre class="prettyprint">
+    if
+    import
+    in
+    is
+    lambda
+    not
+    or
+    pass
+    print
+    raise
+    return
+    try
+    while
+    with
+    yield
+
+                        </pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">variables y constantes</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p>Una variable es un espacio para almacenar datos modificables, en la memoria de un ordenador. En Python, una variable se define con la sintaxis:</p>
+<pre class="prettyprint">
+    nombre_de_la_variable = valor_de_la_variable
+</pre>
+                        <p class="code"> </p>
+                        <p>Cada variable, tiene un nombre y un valor, el cual define a la vez, el tipo de datos de la variable.</p>
+                         <div class="form">
+                            <h5 >Buenas Practicas:</h5>
+                            <p>1.-Utilizar nombres descriptivos y en minúsculas.<br>2.-Para nombres compuestos, separar las palabras por guiones bajos. 
+                            <br>3.- Antes y después del signo =, debe haber uno (y solo un) espacio en blanco. </p>
+                        </div>
+                        <h5>Ejemplo:</h5>
+                        
+                    <pre class="prettyprint">
+    #Correcto
+    mi_variable = 12
+
+    #Incorrecto
+    MiVariable = 12
+    mivariable = 12
+    mi_variable=12
+    mi_variable = 12
+                    </pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p>Existe otro tipo de variable, denominada constante, la cual se utiliza para definir valores fijos, que no requieran ser modificados.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2 ">
+                        <div class="form">
+                            <h5>Buenas prácticas:</h5>
+                            <p>1.-Utilizar nombres descriptivos y en mayúsculas separando palabras por guiones bajos. </p>
+                        </div>
+                        
+                       <h5>Ejemplo:</h5>
+                       <pre class="prettyprint">
+    MI_CONSTANTE = 12
+                       
+                       </pre>
+                       <p>Para <bold>imprimir un valor en pantalla</bold>, en Python, se utiliza la palabra clave <code>print</code>:</p>
+                       <pre class="prettyprint">
+    mi_variable = 15
+    print mi_variable
+                       </pre>
+                       <p>Lo anterior, imprimirá el valor de la variable<code> mi_variable </code>en pantalla.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">expresiones</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2" >
+                        <p>Una expresión es una porción de código Python que produce o calcula un valor (resultado).</p>
+                        <p>Un valor es una expresión (de hecho es la expresión más sencilla). Por ejemplo el resultado de la expresión <code>111</codeZ> es precisamente el número <code>111</code></p>
+                        <p>Una variable es una expresión, y el valor que produce es el que tiene asociado en el estado (si <code>x → 5 </code> en el estado, entonces el resultado de la expresión <code>x</code>  es el número <code>5</code>).</p>
+                    </div>
+                </div>
+
+             </div>
+        </section>
+
+        <section id="datatypes" >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col ">
+                        <h1 class="text-center">Tipos de datos</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="controlstatements" >
+             <div class="container-fluid">
+                <div class="row">
+                    <div class="col ">
+                        <h1 class="text-center">Sentencias de Control</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="subprograms" >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col ">
+                        <h1 class="text-center">Subprogramas y paso de parámetros</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="example" >
+            <div class="container-fluid">
+                 <div class="row">
+                    <div class="col ">
+                        <h1 class="text-center">Programa ejemplo</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scripts -->
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
