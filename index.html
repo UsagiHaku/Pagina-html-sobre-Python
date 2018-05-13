@@ -551,6 +551,140 @@
                         <h1 class="text-center">Tipos de datos</h1>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+
+                        <h3 class="text-center">Tipos numéricos.</h3>
+                        <h4 class="text-center">Numeros enteros (int)</h2>
+
+                        <p>Python identifica a los número enteros como un tipo de dato el cual puede ser expresado de la siguiente manera.</p>
+                        <ul>
+                            <li>Decimal: 24, 60</li>
+                            <li>Binario: 0b010011 0b1101</li>
+                            <li>Hexadecimal: 0x18, _0x3cf4</li>
+                            <li>Octal: 030, 074</li>
+                        </ul>
+
+                        <h4 class="text-center">Números de punto flotante (float).</h4>
+
+                        <p>Los objetos tipo float corresponden al conjunto de los números reales.</p>
+                        <ul>
+                            <li>3.141595</li>
+                            <li>12.</li>
+                            <li>-45.3556</li>
+                        </ul>
+                        
+                        <h4 class="text-center">Números complejos (complex).</h4>
+
+                        <p>Los objetos de tipo complex corresponden al conjunto de los números complejos.</p>
+                        <p>Siempre que el componente en los números reales sea distinto de 0, los objetos de tipo complex se expresarán como un par de números de tipo float separados por el operador de adición "+", en el que el primer número corresponde al componente en los números reales y el componente en los números imaginarios es identificado añadiéndole la letra "j" al final.</p>
+
+                        <ul>
+                            <li>6.32 + 45j</li>
+                            <li>0.117j</li>
+                            <li>(2 + 0j)</li>
+                            <li>1j</li>
+                        </ul>
+
+                        <h4 class="text-center">Valores booleanos (bool).</h4>
+
+                        <p>El tipo booleano es una especie de tipo numérico que es utilizado para evaluar expresiones lógicas.</p>
+
+                        <ul>
+                            <li>Si la expresión lógica es cierta, el resultado es True (con mayúscula al principio).</li>
+                            <li>Si la expresión lógica NO es cierta, el resultado es False (con mayúscula al principio).</li>
+                        </ul>
+
+
+                        <h3 class="text-center">Cadenas de caracteres (str) .</h3>
+
+                        <p>Las cadenas de caracteres son secuencias de caracteres encerradas entre comillas (" ") o apóstrofes (' ') indistintamente.</p>
+
+                        <ul>
+                            <li>'Hola Mundo'</li>
+                            <li>"Vamos al McDonald's"</li>
+                        </ul>
+
+                        <h3 class="text-center">None.</h3>
+
+                        <p>El tipo None representa un valor "vació".</p>
+
+                        <h3 class="text-center">Funciones relativas a tipos de datos.</h4>
+                        
+                        <h4 class="text-center">type()</h4>
+
+                        <p>type regresa el tipo de dato de una variable.</p>
+
+                        <pre class="prettyprint">
+type("Hola") # str
+type(12) # int
+type(23j) # complex</pre>
+
+                        <h4 class="text-center">str()</h4>
+                        <p>Transforma a un objeto compatible en una cadena de caracteres.</p>
+
+                        <pre class="prettyprint">
+str(True) # 'True'
+str(12 + 3.5j) # '(12+3.5j)'</pre>
+
+                        <h4 class="text-center">int()</h4>
+
+                        <p>Transforma un objeto compatible a un objeto tipo int.</p>
+                        <ul>
+                            <li>Puede convertir objetos de tipo str que representen correctamente a un número entero.</li>
+                            <li>Trunca los objetos de tipo float a la parte entera.</li>
+                            <li>True es convertido en 1 y False en 0.</li>
+                            <li>No es compatible con objetos tipo complex.</li>
+                        </ul>
+
+                        <pre class="prettyprint">
+int(True) # 1
+int("-12") # -12
+str(12 + 3.5j) # '(12+3.5j)'</pre>
+
+                        <h4 class="text-center">int()</h4>
+
+                        <p>Transforma un objeto compatible a un objeto tipo int.</p>
+                        <ul>
+                            <li>Puede convertir objetos de tipo str que representen correctamente a un número entero.</li>
+                            <li>Trunca los objetos de tipo float a la parte entera.</li>
+                            <li>True es convertido en 1 y False en 0.</li>
+                            <li>No es compatible con objetos tipo complex.</li>
+                        </ul>
+
+                        <pre class="prettyprint">
+int(True) # 1
+int("-12") # -12
+str(12 + 3.5j) # '(12+3.5j)'</pre>
+
+                        <h4 class="text-center">float()</h4>
+
+                        <p>Transforma a un objeto compatible a uno de tipo float.</p>
+                        <ul>
+                            <li>Puede convertir objetos de tipo str que contengan representen correctamente a un número real.</li>
+                            <li>Es compatible con los objetos tipo int.</li>
+                            <li>True es convertido en 1.0 y False en 0.0.</li>
+                            <li>No es compatible con objetos tipo complex.</li>
+                        </ul>
+
+                        <pre class="prettyprint">
+float(False) # 1
+float("-12.6") # -12.6
+float(-5) # -5.0</pre>
+                        <h4 class="text-center">bool()</h4>
+                        <p>Transforma en booleano a un objeto.</p>
+                        <ul>
+                            <li>El 0 es igual a False.</li>
+                            <li>Cualquier otra cosa distinto de 0 es True.</li>
+                        </ul>
+
+                        <pre class="prettyprint">
+bool(-3) # True
+bool(2) # True
+bool(0.0) # False</pre>
+                    </div>
+                </div>
+
             </div>
         </section>
 
