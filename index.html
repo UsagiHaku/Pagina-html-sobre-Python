@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <titlePython></title>
+        <title>Python</title>
         <meta name="description" content="Pagina para la materia del maestro curi">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="manifest" href="site.webma<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">nifest">
+        <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -15,13 +15,17 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/google/code-prettify/master/loader/skins/desert.css">
         <!--css-->
+        
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        
+       <!-- <link rel="stylesheet" type="text/css" media="all" href="css/animate.css"> -->
         <!-- FONTS-->
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
         <!--animate.css-->
-        <link rel="stylesheet" href="animate.min.css">
+       
         <!-- icon-->
         <a href="https://icons8.com">Icon pack by Icons8</a>
 
@@ -47,13 +51,13 @@
                     Caracteristicas
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Semántica y Sintaxis</a>
-                        <a class="dropdown-item" href="#">Identificadores y Variables</a>
+                        <a class="dropdown-item" href="#">Semántica </a>
+                        <a class="dropdown-item" href="#">Sintaxis</a>
+                        <a class="dropdown-item" href="#">Sentencias de control</a>
+                        <a class="dropdown-item" href="#">Identificadores</a>
                         <a class="dropdown-item" href="#">Tipos de Datos</a>
-                        <a class="dropdown-item" href="#">Expresiones</a>
-                        <a class="dropdown-item" href="#">Estructuras de Control</a>
                         <a class="dropdown-item" href="#">Subprogramas</a>
-                        <a class="dropdown-item" href="#">Pasos de Parametros</a>
+                        <a class="dropdown-item" href="#">Paso de parámetros</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -72,7 +76,7 @@
                 </div>
                 <div class="row">
                     <div id="history-information" class="col-sm-6 text-center " >
-                        <p>Fue creado a principios de la década de 1990 por Guido van Rossum para  Stichting Mathematisch Centrum (Centro para las Matemáticas y la Informática ) en los países bajos como un sucesor del lenguaje ABC.<br>
+                        <p >Fue creado a principios de la década de 1990 por Guido van Rossum para  Stichting Mathematisch Centrum (Centro para las Matemáticas y la Informática ) en los países bajos como un sucesor del lenguaje ABC.<br>
                         Aunque el lenguaje surge de la contribución de varias personas, el autor principal sigue siendo Guido.<br>
                         En 1995 Guido continuó Python en CNRI (Corporation for National Research Initiatives) ubicado en  Reston, Virginia donde lanzó varias versiones del software.
                         <br>
@@ -184,7 +188,58 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col">
-                        <h1 class="text-center"> Sintaxis & Semántica</h1>
+                        <h1 class="text-center"> Semántica, Sintaxis & Sentencias de control</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">Semántica</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2 ">
+                        <p>Existen un gran numero de diferentes formas de Semántica en Pytho.<br>
+                          La forma formal de la Semántica mejora nuestro entendimiento de un lenguaje hasta sus mejores detalles,
+                            simplificando el razonamiento de los programas hasta un nivel abstracto.
+                        <p>
+                        <h5>Ventajas de los operadores semánticos:</h5>
+                        <p> 
+                            <ul>
+                                <li>Facilitan la creación de intérpretes de compiladores</li>
+                                <li>Los análisis de programas pueden ser diseñados en una forma más sistemática y 
+                                el razonamiento formal puede ser utilizado para verificar propiedades del análisis
+                                </li>
+                                <li>Un lenguaje puede ser extendido y alterado de una forma más segura ya que la extensión 
+                                con el lenguaje original puede ser analizado de una forma sistemática
+                                </li>
+                            
+                            </ul>
+                        </p>
+                       
+                        <h5>Desventajas de los operadores semánticos con la forma formal de la semántica:</h5>
+                        <p> <ul>
+                                <li>La semántica formal a veces se percibe como una cuestión de poco valor para los usuarios
+                                y desarrolladores del lenguaje.
+                                </li>
+                                 <li>La semántica formal usualmente se define por separado de la implementación real. 
+                                Que el compilador o el intérprete se adhiera o no a la semántica definida es poco claro y difícil de juzgar.
+                                 </li>
+                                <li>Se ha discutido que la semántica formal inhibe la evolución del lenguaje.
+
+                                </li>
+                            </ul>
+                        </p>
+                       
+                        <p> Esta lista de deficiencias de la semántica formal puede ser eliminada haciendo la semántica operacional ejecutable,
+                            es decir, escribir la semántica en una forma que pueda ser compilada en un intérprete, esto sería de igual valor
+                            que un intérprete ya que simplificaría la mantención de la semántica operacional ya que se desarrollaría en paralelo
+                            junto con la implementación.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <h2>Sintaxis & Sentencias de Control</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -345,6 +400,32 @@
 
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col ">
+                        <h4 class="text-center">List Comprehensions</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p>Consiste en operaciones muy
+                            intuitivas con listas.
+                        </p>
+                            <pre class="prettyprint">
+    vec = [2,4,6]
+    [3 * x for x in vec]
+    #Respuesta :[6,12,18]
+
+    [3 * x for x in vec if x > 3]
+    #Respuesta :[12,18]
+
+    [[x,x**2] for x in vec]
+    #Respuesta:[[2,4],[4,16],[6,36]]
+
+
+                        </pre>
+                    </div>
+                </div>
 
                 <div class="row">
                     <div class="col">
@@ -365,8 +446,92 @@
                             variable = NombreDeClase ()
                         </p>
                         <pre class="prettyprint">
-                            
+    #Ejemplo:
+
+    class MiClase:
+        “Una clase de ejemplo”
+        i = 12435
+        def f(self):
+                    return “hola mundo”
+
+    
+    x = MiClase()
+
+    x.i
+    
+    #12435
+
+    x.f()
+
+    #“hola mundo”
                         </pre>
+                        <p><li>Se puede incluir una función, llamada <code>init</code>,
+                            que se ejecute siempre que se cree una
+                            instancia de la clase. </li>
+                        </p>
+                        <pre class="prettyprint">
+    Def __init__(self):
+                    instrucciones
+                        </pre>
+                        <p> init no puede hacer return.</p>
+                        <p><li> Las variables de instancia no necesitan
+                            declararse.</li>
+                        </p>
+                        <pre class="prettyprint">
+    x=MiClase()
+    x.numero=7                        
+                        </pre>
+                        <p><code>x.f()</code>  equivale a <code>MiClase.f(x)</code></p>
+                        <pre class="prettyprint">
+    MiClase.f(x)   
+    #Resultado: "hola mundo"                     
+                        </pre>
+                        <p><li>  Para definir una subclase se escribe <code>class NombreDeClase(NombreSubclase)</code>. <br>Se 
+                            heredan funciones y variables de clase.</li>
+                        </p>
+                        <pre class="prettyprint">
+    class MiSubClase(MiClase): 
+                        j=5
+                        def g(self):
+                                    return 5
+
+    x=MiSubClase()
+    x.j
+    #Resultado: 5
+
+    x.i
+    #Resultado: 12435
+
+    x.f()
+    #Resultado: "hola mundo"
+                        </pre>
+                        <p><li> Podemos redefinir una función en la subclase:</li></p>
+                        <pre class="prettyprint">
+    class MiSubClase(MiClase):
+    def f(self):
+                return “HOLA MUNDO”
+    x = MiSubClase()
+    x.f()
+    #Resultado: “HOLA MUNDO"
+                        </pre>
+                        <p>Y para llamar al método de la superclase:</p>
+                        <pre class="prettyprint">
+    x.f()
+    #Resultado:“hola mundo”
+
+    MiClase.f(x)
+    #Resultado:“hola mundo”
+                        </pre>
+                        <p><li>Es muy fácil dotar de herencia múltiple, basta con
+                                incluir más clases como argumentos en la definición: <code>class MiSubClase
+                                        (Superclase1, Superclase2,...)
+                                    </code> <br>A la hora de
+                                 resolver un mensaje a un objeto de <code>MiSubClase</code>
+                               se buscará el método en la propia clase, si
+                                no se encuentra se busca en <code>Superclase1</code>  (y en sus
+                                superclases), luego en  <code>Superclase2</code>, etc.</li>
+                        </p>
+
                     </div>
                 </div>
 
@@ -528,19 +693,6 @@
                        <p>Lo anterior, imprimirá el valor de la variable<code> mi_variable </code>en pantalla.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <h2 class="text-center">expresiones</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-8 offset-sm-2" >
-                        <p>Una expresión es una porción de código Python que produce o calcula un valor (resultado).</p>
-                        <p>Un valor es una expresión (de hecho es la expresión más sencilla). Por ejemplo el resultado de la expresión <code>111</codeZ> es precisamente el número <code>111</code></p>
-                        <p>Una variable es una expresión, y el valor que produce es el que tiene asociado en el estado (si <code>x → 5 </code> en el estado, entonces el resultado de la expresión <code>x</code>  es el número <code>5</code>).</p>
-                    </div>
-                </div>
-
              </div>
         </section>
 
@@ -553,22 +705,161 @@
                 </div>
             </div>
         </section>
-
-        <section id="controlstatements" >
-             <div class="container-fluid">
-                <div class="row">
-                    <div class="col ">
-                        <h1 class="text-center">Sentencias de Control</h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="subprograms" >
+    <section id="subprograms" >
             <div class="container-fluid">
                 <div class="row">
                     <div class="col ">
                         <h1 class="text-center">Subprogramas y paso de parámetros</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">Subprogramas</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">Paso de Parámetros</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p>En otros lenguajes de programación existe el paso de parámetros por valor y por referencia.<br> 
+                            En los pasos por valor, una función no puede modificar el valor de las variables que recibe 
+                            por fuera de su ejecución: un intento por hacerlo simplemente altera las copias locales de
+                            dichas variables.
+                        </p>
+                        <p>Por el contrario, al pasar por referencia, una función obtiene 
+                            acceso directo a las variables originales, permitiendo 
+                            así su edición.
+                        </p>
+                        <p>Ejemplos de este último comportamiento en Visual Basic y C, 
+                                respectivamente:
+                        </p>
+                            <pre class="prettyprint">
+    Private Sub CambiarCantidad(ByRef cantidad As Integer)
+        cantidad = 5
+    End Sub
+    Dim cantidad As Integer
+    cantidad = 1
+    Call CambiarCantidad(cantidad)
+    print cantidad  ' Imprime 5
+
+                        </pre>
+                        <pre class="prettyprint">
+    void CambiarCantidad(int *cantidad)
+    {
+        *cantidad = 5;
+    }
+    int cantidad = 1;
+    CambiarCantidad(&cantidad);
+    printf("%d", cantidad);  /* Imprime 5 */
+    
+                        </pre>
+                        <p>En ambos casos (aunque en Visual Basic no pueda observarse, 
+                            ya que la máquina virtual se encarga de esto) se trata de pasar 
+                            un puntero en referencia a la variable que se desea editar. 
+                        
+                        </p>
+                        <p>En Python, en cambio, no se concibe la dialéctica paso por valor/referencia, 
+                            porque el lenguaje no trabaja con el concepto de variables sino objetos y referencias.
+                            Al realizar la asignación <code>a = 1 </code>no se dice que “<code>a</code> contiene el valor 1″ sino que “<code>a</code> referencia a 1″. 
+                            Así, en comparación con otros 
+                            lenguajes, podría decirse que en Python los parámetros siempre se pasan por referencia.   
+                        </p>
+                        <p>
+                            Ahora bien podríamos preguntar, 
+                            ¿por qué el siguiente código no modifica los valores originales?
+                        </p>
+                        <pre class="prettyprint">
+    def f(a, b, c):
+    # No altera los objetos originales.
+        a, b, c = 4, 5, 6
+    a, b, c = 1, 2, 3
+    f(a, b, c)
+    print(a, b, c)   
+    
+    # Imprime 1, 2, 3.
+                        </pre>
+                        <p>La respuesta es que los números enteros (como también 
+                            los de coma flotante, las cadenas y otros objetos) son 
+                            inmutables. Es decir, una vez creados, su valor no puede 
+                            ser modificado. ¿Cómo, no puedo acaso hacer<code>a = 1</code> y luego <code>a = 2</code>? 
+                            Claro, pero desde la perspectiva del lenguaje, no estás cambiando el 
+                            valor de a de 1 a 2 sino quitando la referencia a 1 y poniéndosela a 2. 
+                            En términos más simples, no “cambias” el valor de un objeto sino que le asignas 
+                            una nueva referencia.
+
+                        </p>
+                        <p>
+                            En el código anterior, al ejecutar <code>a, b, c = 4, 5, 6</code>
+                            estás creando nuevas referencias para los números 4, 5 y 6 
+                            dentro de la función <code>f</code> con los nombres <code>a</code>,<codeb></code> y <code>c</code>.
+                        </p>
+                        <p>Sin embargo otros objetos, como las listas o diccionarios, son mutables. Veamos un ejemplo:</p>
+                        <pre class="prettyprint">
+    def f(a):
+        a[0] = "CPython"
+        a[1] = "PyPy"
+        a.append("Stackless")
+    >>> items = ["Perro", "Gato"]
+    >>> f(items)
+    >>> items
+    ['CPython', 'PyPy', 'Stackless']
+                        </pre>
+                        <p>Entonces ahora nos entendemos: basta con saber si un objeto es mutable o
+                            inmutable para determinar si es posible editarlo dentro de una función y 
+                            que tenga efecto por fuera de ésta. Es correcto, pero aquí hay una mejor 
+                            noticia: ¡no hay necesidad alguna para que lo hagas! Te diré por qué: el 
+                            paso por referencia es la manera en que los lenguajes que trabajan con 
+                            variables proveen al programador para retornar más de un valor en 
+                            una misma función. En cambio, Python permite devolver varios objetos 
+                            utilizando tuplas o listas. Por ejemplo:
+                        </p>
+                        <pre class="prettyprint">
+                            
+    a = 11
+    b = 22
+    c = 33
+    def  f():
+        return  44, , 55, , 66
+
+    a, b, c = f()
+    # Ahora "a" es 4, "b" es 5 y "c" es 6
+
+                        </pre>
+                        <p>En Python no es una buena práctica modificar los objetos pasados 
+                            como parámetros desde una función y puede llevar a resultados inesperados. 
+                            No hay razón para hacerlo, basta con retornar múltiples objetos.
+                        </p>
+                        <p>Otro método de obtener el mismo resultado (cambiar el valor de un objeto y mantener 
+                            los cambios fuera de la función) 
+                            es utilizando variables globales, poco recomendado 
+                            (yo diría que no recomendado) e inseguro.
+                        </p>
+                        <pre class="prettyprint">
+    a, b, c = 1, 2, 3
+    # Cambio el nombre de los argumentos para evitar errores de nombramiento.
+    def f(d, e, f):
+        global a, b, c
+        a, b, c = 4, 5, 6
+    f(a, b, c)
+                        </pre>
+                        <p>Para funciones de C que requieran pasar parámetros por referencia 
+                            (un puntero), pueden utilizarse las funciones ctypes.byref
+                            y ctypes.pointer que, en estos casos, resultan similares, 
+                            con la diferencia que la primera se ejecuta más rápidamente. 
+                            Ambas toman como parámetro un objeto que represente un tipo
+                            de C (por ejemplo,<code>c_bool</code>,<code>c_char</code>, etc.).
+
+                        </p>
+                        <pre class="prettyprint">
+    from ctypes import byref, c_int, pointer
+    a = c_int(50)
+    a_ref = byref(a)
+    a_ptr = pointer(b)
+
+                        </pre>
                     </div>
                 </div>
             </div>
@@ -599,5 +890,10 @@
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+        <script>
+            $( "p" ).addClass( "animated fadeInUp" );
+          
+        </script>
     </body>
 </html>

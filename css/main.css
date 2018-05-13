@@ -267,7 +267,7 @@ textarea {
     }
 }
 
-p,ul{
+p,ul,li{
     font-family: 'Noto Serif', serif;
     color: #3D3D3D;
 }
