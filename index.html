@@ -17,7 +17,6 @@
         <!--css-->
         
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         
        <!-- <link rel="stylesheet" type="text/css" media="all" href="css/animate.css"> -->
         <!-- FONTS-->
@@ -51,17 +50,16 @@
                     Caracteristicas
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Semántica </a>
-                        <a class="dropdown-item" href="#">Sintaxis</a>
-                        <a class="dropdown-item" href="#">Sentencias de control</a>
-                        <a class="dropdown-item" href="#">Identificadores</a>
-                        <a class="dropdown-item" href="#">Tipos de Datos</a>
-                        <a class="dropdown-item" href="#">Subprogramas</a>
-                        <a class="dropdown-item" href="#">Paso de parámetros</a>
+                        <a class="dropdown-item" href="#semantics">Semántica </a>
+                        <a class="dropdown-item" href="#Sintaxis">Sintaxis / Sentencias de control</a>
+                        <a class="dropdown-item" href="#identifiers">Identificadores</a>
+                        <a class="dropdown-item" href="#datatypes">Tipos de Datos</a>
+                        <a class="dropdown-item" href="#subprograms">Subprogramas</a>
+                        <a class="dropdown-item" href="#paso-parametros">Paso de parámetros</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Ejemplo</a>
+                    <a class="nav-link" href="#example">Ejemplo</a>
                 </li>
                 </ul>
             </div>
@@ -237,9 +235,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
+                <div id="Sintaxis" class="row">
                     <div class="col text-center">
-                        <h2>Sintaxis & Sentencias de Control</h2>
+                        <h2  >Sintaxis & Sentencias de Control</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -852,6 +850,89 @@ bool(0.0) # False</pre>
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p>Los subprogramas o módulos son en sí códigos completos que pueden 
+                            tener su propia estructura y ser llamados por otros programas según las 
+                            necesidades. Estos subprogramas no están restringidos a tener entradas y 
+                            salidas específicas.
+                        </p>
+                        <p>En lenguaje PYTHON estos subprogramas son códigos independientes que se invocan o 
+                            incluyen en cualquier otro programa con la palabra clave “import”. Veamos el ejemplo de crear
+                             un subprograma con unas constantes y 
+                            una función que deseamos llamar desde otro programa o desde el interface (python shell):
+                        </p>
+                        <p>
+                            Subprograma escrito en el editor y guardado con el nombre subprog1.py
+                                
+                        </p>
+                        <code>Cpi = 3.141592<br>
+                                Ce = 2.718281
+                        </code>
+                        <pre class="prettyprint">
+
+    def recordar():
+    print '1. 180 grados son PI radianes '
+    print '2. La constante neperiana e se debe a John Napier'
+                        </pre>
+                        <p>Este subprograma define la constante Cpi que contiene el número pi,
+                            la constante Ce que contiene el número Neperiano y una función que se llama recordar y
+                            que presenta en pantalla dos frases para recordar una información escrita.
+
+                        </p>
+                        <p>  Una forma de invocar el subprograma para utilizar sus constantes y su función en el ambiente del interface
+                             (python shell) es usando la palabra clave “import ” seguida del nombre del archivo:
+                        </p>
+                        <pre class="prettyprint">
+    >>> import subprog1
+                        </pre>
+                        <p>
+                            Con esta instrucción ya podemos invocar las constantes y la función que están 
+                            programadas en el archivo subprog1.py usando la siguiente escritura:
+                        </p>
+                        <pre class="prettyprint">
+    >>>subprog1.Ce
+    2.718281
+    >>> subprog1.Cpi
+    3.141592
+    >>> subprog1.recordar()
+    1. 180 grados son PI radianes
+    2. La constante neperiana e se debe a John Napier
+    >>>
+                        </pre>
+                        <p>Observe que se escribe primero el nombre del archivo y después del punto, 
+                            el nombre de la variable respectiva o la función.
+
+                            Una forma alternativa de invocar sólo parte de un subprograma, 
+                            es usando la palabra clave “from” como en el ejemplo siguiente:
+                        </p>
+                        <pre class="prettyprint">
+    >>>from subprog1 import Cpi
+        >>> Cpi
+        3.141592
+                        </pre>
+                        <p>
+                            Aquí se especifica que del archivo subprog1.py se incluya en 
+                            el ambiente la constante Cpi, la cual puede ser llamada directamente con 
+                            su nombre original. La otra constante Ce y la función recordar() no quedan incluidas en 
+                            el ambiente hasta tanto no son llamadas explícitamente. Por ejemplo, podemos hacer el llamado así:
+
+                        </p>
+                        <pre class="prettyprint">
+
+    >>> from subprog1 import Ce, recordar
+    >>> Ce
+    2.718281
+    >>> recordar()
+    1. 180 grados son PI radianes 
+    2. La constante neperiana e se debe a John Napier
+    >>>
+                        </pre>
+                        <p>De esta manera se puede ser selectivo en la parte o porción del subprograma que se desea incluir.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div id="paso-parametros" class="row">
                     <div class="col">
                         <h2 class="text-center">Paso de Parámetros</h2>
                     </div>
@@ -1006,6 +1087,145 @@ bool(0.0) # False</pre>
                         <h1 class="text-center">Programa ejemplo</h1>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <pre class="prettyprint">
+    estados = list
+    alfabeto = list
+    estadoInicial = list
+    estadosFinales = list
+    transiciones = list
+    
+    #Pregunto por el directorio
+    print("DirecciÛn del archivo con la definiciÛn formal del autÛmata finito: ")
+    rutaDefinicion = input()
+    print("DirecciÛn del archivo con las palabras a probar en el automata")
+    rutaPalabras = input()
+    
+    #Creo files
+    rutaDefinicionFormal = open(rutaDefinicion + "/Definicion.txt")
+    rutaPalabrasPrueba = open(rutaPalabras + "/revision-de-cadenas.txt")
+    
+    #Si este archivo existe,entonces se obtiene 
+    #informaciÛn acerca del archivo,sino se avisa:
+    if rutaDefinicionFormal.exists():
+        print("------ Archivo txt con definiciÛn formal de AF--------")
+        print("Nombre del archivo " + rutaDefinicionFormal.getName())
+        print("Camino             " + rutaDefinicionFormal.getPath())
+        print("Camino absoluto    " + rutaDefinicionFormal.getAbsolutePath())
+        print("Se puede leer      " + rutaDefinicionFormal.canWrite())
+    
+    else:
+        print("Se puede leer      " + rutaDefinicionFormal.canWrite())
+    
+    if rutaPalabrasPrueba.exists():
+        print("------ Archivo txt con Palabras a probar en AF-------")
+        print("Nombre del archivo " + rutaPalabrasPrueba.getName())
+        print("Camino             " + rutaPalabrasPrueba.getPath())
+        print("Camino absoluto    " + rutaPalabrasPrueba.getAbsolutePath())
+        print("Se puede leer      " + rutaPalabrasPrueba.canWrite())
+    
+    
+    else:
+        print("Se puede leer      " + rutaPalabrasPrueba.canWrite())
+    
+    
+    definicion =input(rutaDefinicionFormal)
+    # Inserto los estados al Arraylist "estados"
+    while (definicion.hasNextLine()).equals(True):
+        lecturaEstados = definicion.nextLine()
+        if (lecturaEstados.equals("E=")):
+                break
+        else:
+            estados.add(lecturaEstados)
+    
+    # Inserto el alfabeto al list "alfabeto"
+    while (definicion.hasNextLine()).equals(True):
+        lecturaAlfabeto= definicion.nextLine()
+        if (lecturaAlfabeto.equals("I=")):
+                break
+        else:
+            alfabeto.add(lecturaAlfabeto)
+    
+        #Inserto el estado inicial al Arraylist "estadoInicial"
+    while (definicion.hasNextLine()).equals(True):
+        lecturaEstadoInicial= definicion.nextLine()
+        if lecturaEstadoInicial.equals("F="):
+                break
+        else:
+                estadoInicial.add(lecturaEstadoInicial)
+    
+    
+    #Inserto los estados finales al Arraylist "estadosFinales"
+    while (definicion.hasNextLine()).equals(True):
+        lecturaEstadosFinales = definicion.nextLine()
+        if(lecturaEstadosFinales.equals("D=")):
+            break
+        else:
+                estadosFinales.add(lecturaEstadosFinales)
+    
+    #Inserto las transiciones al Arraylist "transiciones"
+    while (definicion.hasNextLine()).equals(True):
+        lecturaTransiciones = definicion.nextLine()
+        transiciones.add(lecturaTransiciones)
+        while (definicion.hasNextLine()):
+    
+            # Ahora checaré las palabras del archivo txt para ver 
+            #si pertenecen o no al AF
+    
+            palabras =input(rutaPalabrasPrueba)
+    
+            caracterAnalizado = "";unEstado = "";aux = ""
+            i = 0; p = 0;q = 0
+    
+            while(palabras.hasNextLine()):
+    
+                palabraActual = palabras.nextLine()
+                print("Palabra: "+ palabraActual)
+                longitud= len(palabraActual)
+                estadoActual = input(estadoInicial.get(0))
+    
+                for i in range(0,longitud):
+                    caracterAnalizado=palabraActual.substring(i, (i + 1))
+                    estadoActual= estadoActual.concat("," )
+                    estadoActual= estadoActual.concat(caracterAnalizado)
+                    print(estadoActual +"->")
+                    estadoActual=estadoActual.concat(",")
+                    aux=estadoActual
+    
+                    for p in range(0,len(estados)):
+                        unEstado = estados.get(p)
+                        estadoActual=aux;
+                        estadoActual=estadoActual.concat(unEstado)
+    
+                        for q in range(0,len(transiciones)):
+                            if estadoActual.equals(transiciones.get(q)):
+                                caracterAnalizado =estadoActual.substring(4,5)
+                                p= len(estados)
+                                q= len(transiciones)
+                                estadoActual=caracterAnalizado
+                                print(caracterAnalizado)
+    
+                caracterAnalizado=estadoActual
+    
+                s = 0; cumplimiento=0
+    
+                for s in range(0,len(estadosFinales)):
+                    unEstado=estadosFinales.get(s)
+                    if(unEstado.equals(caracterAnalizado)):
+                        cumplimiento=1
+                        s=len(estadosFinales)
+    
+                if(cumplimiento==1):
+                    print("El estado "+caracterAnalizado+ " es final")
+                    print("La cadena "+ palabraActual +" pertenece al lenguaje \n")
+                else:
+                    print("El estado "+caracterAnalizado +" no es final")
+                    print("La cadena "+ palabraActual+" no pertenece al lenguaje \n")
+
+                        </pre>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -1015,19 +1235,13 @@ bool(0.0) # False</pre>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
         <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-
-        <script>
-            $( "p" ).addClass( "animated fadeInUp" );
-          
+            window.sr = ScrollReveal();
+            sr.reveal('p, .img-fluid, h1, h2, h3, h4, h5, pre, code, section li', { duration: 900, reset: true });
         </script>
     </body>
 </html>
